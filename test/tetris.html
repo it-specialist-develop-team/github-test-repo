@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+<link rel="stylesheet" type="text/css" href="tetris.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta content="text/javascript" http-equiv="Content-Script-Type">
+<meta name="description" content="" /> 
+<meta name="keywords" content="" />
+<title></title>
+<script type="text/javascript" src="tetris.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	Tetris.init("id_CVS");
+	Tetris.start();
+}
+
+Tetris.gameOver = function(){
+	alert("game over");
+	Tetris.speed = 1000;
+	Tetris.nexttri = null;
+	Tetris.scolor = 0;
+	Tetris.countmino = 7;
+	Tetris.init("id_CVS");
+	Tetris.start();
+}
+</script>
+</head>
+<body>
+<canvas id="id_hold" width="116" height="116"></canvas>
+<canvas id="id_CVS" width="192" height="336"></canvas>
+<canvas id="id_next" width="80" height="336"></canvas>
+<br>
+[x]:RIGHT TURN<br/>
+[z]:LEFT TURN<br/>
+[SHIFT]:HOLD<br/>
+[CURSOR]:MOVE<br/>
+</body>
+</html>
