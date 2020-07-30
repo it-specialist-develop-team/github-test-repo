@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS reset -->
+  <link rel="stylesheet" href="css/ress.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/create_posts.css">
+  <link rel="stylesheet" href="css/trix.css">
+  <link rel="stylesheet" href="css/site.css">
+
+
+
+
+  <!-- maxlength -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-maxlength/1.7.0/bootstrap-maxlength.min.js"></script>
+
+
+
+  <title>投稿作成</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <p class="header-log">reddit</p>
+      <ul>
+        <li>HOME</li>
+        <li><input type="text" placeholder="Create Post"></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container abc">
+    <div class="row">
+      <main class="col-md-9">
+        <div class="post">
+          <div class="create-post">
+            <div>投稿を作成する</div>
+            <div class="drafts">下書き</div>
+          </div>
+          <form>
+            <label>
+              <select name="community">
+                <option value="" hidden>コミュニティの選択</option>
+                <option value="xxxx">xxxx</option>
+                <option value="xxxx">xxxx</option>
+                <option value="xxxx">xxxx</option>
+              </select>
+            </label>
+            <!-- </form> -->
+            <div class="create-range">
+              <nav class="menu">
+                <ul>
+                  <li class="current">投稿</li>
+                  <li>画像とビデオ</li>
+                  <li>リンク</li>
+                  <li>投票</li>
+                </ul>
+              </nav>
+              <!-- <form> -->
+              <div class="create_text">
+                <div class="test-style">
+
+                  <form>
+                    <div class="form-group">
+                      <textarea class="form-control" maxlength="300"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-success">Submit</button>
+                    </div>
+                  </form>
+
+
+                </div>
+                <div>
+                  <!-- <textarea id="x" class="text" rows="5" placeholder="Text" ></textarea> -->
+                  <!-- <trix-editor input="text" class="trix-content"></trix-editor> -->
+                  <input id="x" type="hidden" name="content" 　placeholder="Text">
+                  <trix-editor class="text" input="x"></trix-editor>
+                </div>
+              </div>
+              <!-- </form> -->
+              <div class="tag_button">
+                <div class="tag">
+                  <div>oc</div>
+                  <div>ネタばれ</div>
+                  <div>NSFW</div>
+                  <div>フレア</div>
+                </div>
+                <div class="button">
+                  <input type="button" value="キャンセル" class="btn btn-primary">
+                  <input type="button" value="投稿" class="btn btn-primary">
+                </div>
+              </div>
+              <div class="reply">
+                <input type="checkbox"> 返信通知を送信する<br>
+                <a href=”#”>アカウントを接続して投稿を共有します</a>
+              </div>
+          </form>
+        </div>
+    </div>
+    </main>
+    <div id="side-post" class="col-md-3">
+      <div class="sidebar">
+        <ul>
+          <li>redditへの投稿</li>
+          <li>1.xxxxx</li>
+          <li>2.xxxxx</li>
+          <li>3.xxxxx</li>
+          <li>4.xxxxx</li>
+          <li>5.xxxxx</li>
+        </ul>
+      </div>
+      <div class="moji">
+        xxxx<a href="#"> xxxx </a>xxxxxxxxx<br>
+        xxxxxxxxxxxxxxxxxx
+      </div>
+      <div class="help">
+        help<br>
+        xxxxx<br>
+        xxxxx<br>
+        XXXXX<br>
+        xxxxx<br>
+        xxxxx
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script type="text/javascript">
+    $('textarea').maxlength({
+      alwaysShow: true,
+      threshold: 10,
+      warningClass: "label label-success",
+      limitReachedClass: "label label-danger",
+      separator: ' out of ',
+      preText: 'You write ',
+      postText: ' chars.',
+      validate: true
+    });
+  </script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- import trix -->
+  <script src="js/trix.js"></script>
+</body>
+</html>

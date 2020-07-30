@@ -1,0 +1,181 @@
+/* ==================================== */
+/* ���� */
+/* ------------------------------------ */
+
+h1,h2,h3,h4{
+	font-size:16px;
+}
+body{
+	background:#ddd;
+}
+header{
+	margin-bottom:20px;
+}
+header nav{
+	display:flex;
+	background:#fff;
+}
+header nav ul{
+	display:flex;
+}
+input[type=text]{
+	background:fff;
+	border-solid:aaa;
+	border-radius:3px;
+}
+ul{
+	list-style:none;
+
+}
+ol{
+	list-style-position:inside;
+}
+
+/* ==================================== */
+/* �u���b�N�̒�` */
+/* ------------------------------------ */
+
+.header-log{
+	display:inline-block;
+}
+
+.block{
+	background:white;
+	border:solid 1px #ccc;
+	border-radius:5px;
+	padding:15px;
+	margin-bottom:20px;
+}
+main .block.post{
+	position:relative;
+}
+main .block.post .post-rank{
+	position:absolute;
+	top:0px;
+	left:0px;
+
+	width:40px;
+	height:100%;
+	background:#fafafa;
+}
+main .block.post .post-rank p{
+	margin:0;
+	text-align:center;
+}
+
+main .block.post .post-content{
+	margin-left:40px;
+}
+main .block.post .post-header{
+	display:flex;
+}
+/**list-styleを指定する**/
+ul{
+    list-style: none;
+}
+
+/** 見た目を整える **/
+body,ul,li{
+    margin:0px;
+	padding:0px;
+
+}
+
+
+/****/
+
+.sub-header-menu li{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+.sub-header-menu ul{
+
+		list-style: none;
+		display:flex;
+
+}
+#icon{
+	border-radius: 100%;
+    border: 4px solid #fff;
+    display: inline-block;
+    height: 72px;
+	width: 72px;
+	position:relative;
+	top:-15px;
+}
+
+#sub-header-backimg{
+	height: auto;
+	width: 100%;
+}
+
+.sub-header{
+	background-color: black;
+}
+.sub-header p{
+	color:white;
+
+}
+.label-success {
+    background-color: #5cb85c;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.label-danger {
+    background-color: #d9534f;
+}
+.tooltip-pearent{
+	position: relative;
+}
+.custom-control{
+	background-color: #f3f3f3;
+	padding: 15px 40px;
+}
+.upload-file{
+	  display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    min-height: 280px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+		border-style: dotted;
+		border-color: #ccc;
+}
+textarea.title-textarea {
+	height: calc(1.5em + .75rem + 2px);
+}
+.post-title{
+	border-bottom: 1px solid;
+	border-color: #f3f3f3;
+	padding: 5px;
+}
+.select2_01{
+width:200px;
+height: 1000px;
+}
+.select2_menu{
+	padding-bottom: 15px ;
+}
+
+.post-footer{
+	background-color: white;
+}

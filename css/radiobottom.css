@@ -1,0 +1,27 @@
+/* checkbox02 */
+input[type=checkbox] {
+	display: none;
+}
+input[type="checkbox"].checkbox02:checked + label {
+	background: #31A9EE;
+	color: #ffffff;
+}
+.check_label:hover {
+	background-color: #E2EDF9;
+}
+.check_label {
+	margin: 5px;
+	width: 100px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	color: #31A9EE;
+	border: 2px solid #006DD9;
+	border-radius: 5px;
+}
+.checkboxlist label{
+	display: inline;
+}

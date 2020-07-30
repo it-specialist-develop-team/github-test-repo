@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Required meta tags -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/ress.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/site.css">
+
+	<!-- maxlength -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-maxlength/1.7.0/bootstrap-maxlength.min.js"></script>
+
+
+
+
+
+	<title>サンプル</title>
+</head>
+<body>
+	<header>
+
+		<!-- <div class="fixed-top"> -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<!-- Image and text -->
+			<nav class="navbar navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">
+					<img src="img/79bit-icon.jpg" id="icon" width="30" height="30" class="d-inline-block align-top" alt="">
+					Bootstrap
+				</a>
+			</nav>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+
+		<!-- </div> -->
+	</header>
+
+	<div class=sub-header>
+
+		<img src="img/sub-header-backimg.jpg" id="sub-header-backimg">
+		<div class="container">
+			<div class="sub-header">
+				<p><img src="img/sub-header-icon.jpg" id="icon">VALORANT			<input type="button" value="JOIN" class="btn btn-primary">
+				</p>
+				<div class="sub-header-menu">
+					<ul>
+						<li>Posts</li>
+						<li>Subreddit</li>
+						<li>Rules</li>
+						<li>WebsiteOther</li>
+						<div class="dropdown">
+							<button type="button" id="dropdown1" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dropdown button
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdown1">
+								<a class="dropdown-item" href="#">Menu #1</a>
+								<a class="dropdown-item" href="#">Menu #2</a>
+								<a class="dropdown-item" href="#">Menu #3</a>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<main class="col-md-8">
+				<div class="block">
+					<h2>UPDATES FROM REDDIT</h2>
+					<div>
+						<h3>Keep yourself safe and informed</h3>
+						<p>Visit r/Coronavirus to talk about COVID-19, and visit www.who.int for more information.</p>
+					</div>
+				</div>
+				<div id="newPost" class="block">
+					<input type="text" placeholder="Create Post">
+				</div>
+				<div id="sortCtl" class="block">
+					<ul>
+						<li>Best</li>
+						<li>Hot</li>
+						<li>New</li>
+						<li>Top</li>
+					</ul>
+				</div>
+				<div class="block post">
+					<div class="post-rank">
+						<p>↑</p>
+						<p>000</p>
+						<p>↓</p>
+					</div>
+					<div class="post-content">
+						<header>
+							<div class="post-header">
+								<p class="subreddit">r/PS4</p>
+								<p class="author">hogehoge</p>
+								<p class="date">x hours ago</p>
+							</div>
+							<h3>foobareatsfoobareatsfoobareats</h3>
+						</header>
+						<div>
+							<p>content content content content content
+							 content content content content content
+							 content content content content content
+							  content content content content content</p>
+							<p>content content content content content
+							  content content content content content</p>
+							<p>content content content content content
+							 content content content content content
+							  content content content content content</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<div id="sidebar" class="col-md-4">
+				<article id="todayRank" class="block ranking">
+					<header>
+						<h1>Trending Community</h1>
+					</header>
+					<div>
+						<ol>
+							<li>r/XXXXX</li>
+							<li>r/XXXXX</li>
+							<li>r/XXXXX</li>
+							<li>r/XXXXX</li>
+						</ol>
+					</div>
+					<div>
+						<input type="button" value="VIEW ALL" class="btn btn-primary">
+						<div>
+						</div>
+					</div>
+				</article>
+				<article class="block adv">
+					<input type="button" value="VIEW ALL" class="btn btn-primary">
+				</article>
+				<article class="block addv">
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+				</article>
+				<article class="block addv">
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+				</article>
+				<article class="block addv">
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+				</article>
+				<article class="block addv">
+
+					<form>
+						<div class="form-group">
+							<label>Details:</label>
+							<textarea class="form-control" maxlength="100"></textarea>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-success">Submit</button>
+						</div>
+					</form>
+				</article>
+				<article class="block addv">
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+					adadadadadadadadadadadad<br>
+				</article>
+				<article id="trendRank" class="block ">
+					<header>
+						<h1>Trending Community</h1>
+					</header>
+					<div>
+					</div>
+				</article>
+			</div>
+		</div><!-- .row -->
+	</div><!-- .wrap -->
+
+	<script type="text/javascript">
+		$('textarea').maxlength({
+			alwaysShow: true,
+			threshold: 10,
+			warningClass: "label label-success",
+			limitReachedClass: "label label-danger",
+			separator: ' out of ',
+			preText: 'You write ',
+			postText: ' chars.',
+			validate: true
+		});
+	</script>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

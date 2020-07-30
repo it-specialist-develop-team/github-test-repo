@@ -1,0 +1,21 @@
+
+#tab-menus {
+}
+#tab-menus .nav-tabs {
+    background-color: white;
+    box-shadow: 0px 0px 33px -15px #000;
+}
+#tab-menus .tab-content {
+    background-color: white;
+    padding: 30px 15px 5px 15px;
+}
+#tab-menus .nav-link {
+    font-size: 18px;
+    color: #0080ff;
+}
+#tab-menus .nav-tabs {
+    border-bottom: 1px solid #0080ff;
+}
+#tab-menus .nav-tabs .nav-link.active {
+    border-color: #0080ff #0080ff #fff;
+}

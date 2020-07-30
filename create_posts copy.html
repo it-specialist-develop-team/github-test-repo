@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS reset -->
+  <link rel="stylesheet" href="css/ress.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/trix.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+
+  <link rel="stylesheet" href="css/htab.css">
+  <link rel="stylesheet" href="css/radiobottom.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <!-- maxlength -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-maxlength/1.7.0/bootstrap-maxlength.min.js"></script>
+
+  <!-- select2 -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <link href="/css/select2.min.css" rel="stylesheet">
+  <script src="/js/select2.min.js"></script>
+
+
+
+  <title>サンプル</title>
+</head>
+<body>
+  <header>
+
+    <!-- <div class="fixed-top"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Image and text -->
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="img/79bit-icon.jpg" id="icon" width="30" height="30" class="d-inline-block align-top" alt="">
+          Bootstrap
+        </a>
+      </nav>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- </div> -->
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Horizontal Bootstrap 4 Tabs -->
+      <main class="col-md-9">
+        <section id="tab-menus">
+          <div class="container">
+            <p class="post-title">Create-Post</p>
+            <div class=select2_menu>
+
+              <select class="select2_01">
+                <option value="tote">PS5</option>
+                <option value="shoulder">VALORANT</option>
+                <option value="ruck">HYPERSCPAE</option>
+                <option value="waist">XBOX SCARLET</option>
+                <option value="clutch">SWITCH</option>
+              </select>
+
+
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class=postmenu>
+                  <!-- Tabs navs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#firstMenu"><i class="fab fa-rocketchat"></i> Post</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#secondmenu"><i class="fas fa-image"></i> Image & Video</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#thirdmenu"><i class="fas fa-link"></i> Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#fourthmenu"><i class="fas fa-list-ol"></i> Poll</a>
+                    </li>
+                  </ul>
+
+
+
+                  <!-- Tabs Content -->
+                  <div class="tab-content">
+                    <!-- Post -->
+                    <div id="firstMenu" class="tab-pane active">
+
+                      <form>
+                        <class class="form-group">
+                          <textarea class="form-control title-textarea" maxlength="400" placeholder="title"></textarea>
+                          <br>
+
+                          <input id="x" type="hidden" name="content" 　placeholder="Text">
+                          <trix-editor class="text" input="x"></trix-editor>
+
+
+
+
+                        </class>
+                      </form>
+                    </div>
+
+
+                    <!-- Image&Video -->
+                    <div id="secondmenu" class="tab-pane">
+                      <form>
+                        <class class="form-group">
+                          <textarea class="form-control title-textarea" maxlength="400" placeholder="title"></textarea>
+                          <br>
+
+                          <div class="upload-file">
+
+                            <p>Drag n Drop or        <label class="btn btn-primary">
+                              Browse <input type="file" style="display: none;">
+                            </label></p>
+                          </div>
+
+
+                        </class>
+                      </form>
+                    </div>
+
+
+
+
+
+                    <div id="thirdmenu" class="tab-pane">
+
+                      <div class="form-group">
+                        <textarea class="form-control title-textarea" maxlength="400" placeholder="title"></textarea>
+                        <br>
+
+                        <input type="text" id="text1" class="form-control">
+                      </div>
+
+                    </div>
+
+
+
+                    <div id="fourthmenu" class="tab-pane">
+                      <h3 class="mt-4">What do you think about Angular JS?</h3>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites</p>
+                    </div>
+                  </div>
+
+
+                  <div class="post-footer">
+                    <class class="checkboxlist">
+                      <input type="checkbox" name="CheckboxGroup2" value="チェックボックス" id="Group2_0" class="checkbox02" /><label for="Group2_0" class="check_label">OC</label>
+                      <input type="checkbox" name="CheckboxGroup2" value="チェックボックス" id="Group2_1" class="checkbox02" /><label for="Group2_1" class="check_label">SPOILER</label>
+                      <input type="checkbox" name="CheckboxGroup2" value="チェックボックス" id="Group2_2" class="checkbox02" /><label for="Group2_2" class="check_label">NSFW</label>
+                      <input type="checkbox" name="CheckboxGroup2" value="チェックボックス" id="Group2_3" class="checkbox02" /><label for="Group2_3" class="check_label">FLAIR</label>
+
+                      <input type="button" id="checkboxlist-end" value="VIEW ALL" class="btn btn-primary">
+
+                    </class>
+
+                    <div class="custom-control custom-checkbox">
+
+                      <input type="checkbox" class="custom-control-input" id="custom-check-1">
+                      <label class="custom-control-label" for="custom-check-1">返信通知</label>
+                      <br>
+
+                      <span class="text-danger tooltip-pearent" data-toggle="tooltip" data-original-title="ユーザー設定からTwitterアカウントと連携します。連携すると作成した投稿を共有することができます。"><a href="#" class="stretched-link">アカウントに接続して共有</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+
+
+      <div id="sidebar" class="col-md-3">
+        <article id="todayRank" class="block ranking">
+          <header>
+            <h1>Trending Community</h1>
+          </header>
+          <div>
+            <ol>
+              <li>r/XXXXX</li>
+              <li>r/XXXXX</li>
+              <li>r/XXXXX</li>
+              <li>r/XXXXX</li>
+            </ol>
+          </div>
+          <div>
+            <input type="button" value="VIEW ALL" class="btn btn-primary">
+            <div>
+            </div>
+          </div>
+        </article>
+        <article class="block adv">
+          <input type="button" value="VIEW ALL" class="btn btn-primary">
+        </article>
+        <article class="block addv">
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+        </article>
+        <article class="block addv">
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+        </article>
+        <article class="block addv">
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+        </article>
+        <article class="block addv">
+
+          <form>
+            <div class="form-group">
+              <label>Details:</label>
+              <textarea class="form-control" maxlength="100"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </article>
+        <article class="block addv">
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+          adadadadadadadadadadadad<br>
+        </article>
+        <article id="trendRank" class="block ">
+          <header>
+            <h1>Trending Community</h1>
+          </header>
+          <div>
+          </div>
+        </article>
+      </div>
+    </div><!-- .row -->
+  </div><!-- .wrap -->
+
+  <script type="text/javascript">
+    $('textarea').maxlength({
+      alwaysShow: true,
+      threshold: 10,
+      warningClass: "label label-success",
+      limitReachedClass: "label label-danger",
+      separator: ' out of ',
+      preText: 'You write ',
+      postText: ' chars.',
+      validate: true
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.select2_01').select2();
+    });
+  </script>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <!-- import trix -->
+  <script src="js/trix.js"></script>
+
+</body>
+</html>

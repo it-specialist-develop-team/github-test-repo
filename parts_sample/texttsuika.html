@@ -1,0 +1,39 @@
+<div id="div2"></div>
+<div id="div3"></div>
+<input type="button" value="追加" onclick="clickBtn3()">
+<input type="button" value="追加2" onclick="clickBtn5()">
+
+<input type="button" value="削除" onclick="clickBtn4()">
+
+<script>
+  function clickBtn3() {
+    const div2 = document.getElementById("div2");
+    // 要素の追加
+    if (!div2.hasChildNodes()) {
+      const input1 = document.createElement("input");
+      input1.setAttribute("type", "text");
+      input1.setAttribute("maxlength", "5");
+      input1.setAttribute("size", "10");
+      input1.setAttribute("value", "初期表示");
+      div2.appendChild(input1);
+    }
+  }
+  function clickBtn5() {
+    const div3 = document.getElementById("div3");
+    // 要素の追加
+    if (!div3.hasChildNodes()) {
+      const input1 = document.createElement("input");
+      input1.setAttribute("type", "text");
+      input1.setAttribute("maxlength", "5");
+      input1.setAttribute("size", "10");
+      input1.setAttribute("value", "初期表示");
+      div2.appendChild(input1);
+    }
+  }
+  function clickBtn4() {
+    const div2 = document.getElementById("div2");
+    if (div2.hasChildNodes()) {
+      div2.removeChild(div2.firstChild);
+    }
+  }
+</script>
